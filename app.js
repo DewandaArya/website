@@ -6,10 +6,17 @@
   if (!toggle || !sidebar) return;
 
   var back = sidebar.querySelector(".sidebar__back");
+  var icon = toggle.querySelector(".topbar__toggle-icon");
+
+  var ICON_SETTINGS = "assets/icons/sliders.svg";
+  var ICON_HOME = "assets/icons/home.svg";
 
   function setOpen(open) {
     sidebar.classList.toggle("is-open", open);
+    document.body.classList.toggle("is-settings-open", open);
     toggle.setAttribute("aria-expanded", String(open));
+    toggle.setAttribute("aria-label", open ? "Home" : "Settings");
+    if (icon) icon.src = open ? ICON_HOME : ICON_SETTINGS;
   }
 
   toggle.addEventListener("click", function () {
