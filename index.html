@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MojoLauncher</title>
+<meta name="description" content="MojoLauncher — placeholder official website.">
+<link rel="icon" href="assets/logo.webp">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top">
+    <img class="brand__logo" src="assets/logo.webp" alt="MojoLauncher logo" width="34" height="34">
+    <span class="brand__name">MojoLauncher</span>
+  </a>
+
+  <nav class="topbar__nav" aria-label="Main">
+    <a href="#top" data-i18n="nav.home">Home</a>
+    <a href="#features" data-i18n="nav.features">Features</a>
+    <a href="#news" data-i18n="nav.news">News</a>
+    <a href="#download" data-i18n="nav.download">Download</a>
+  </nav>
+
+  <div class="socials">
+    <a class="icon-button" href="https://github.com/MojoLauncher/MojoLauncher" aria-label="GitHub">
+      <img class="icon-button__logo" src="assets/icons/github.svg" alt="" width="26" height="26">
+    </a>
+
+    <a class="icon-button" href="https://discord.gg/VHdwQFsaGX" aria-label="Discord">
+      <img class="icon-button__logo icon-button__discord" src="assets/icons/discord.svg" alt="" width="28" height="22">
+      <img class="icon-button__flag" src="assets/icons/flag-gb.svg" alt="" title="English (UK)">
+    </a>
+
+    <a class="icon-button" href="https://t.me/MojoLauncher" aria-label="Telegram">
+      <img class="icon-button__logo" src="assets/icons/telegram.svg" alt="" width="26" height="26">
+      <img class="icon-button__flag" src="assets/icons/flag-ru.svg" alt="" title="Русский (RU)">
+    </a>
+
+    <a class="icon-button" href="https://reddit.com/r/MojoLauncher" aria-label="Reddit">
+      <img class="icon-button__logo" src="assets/icons/reddit.svg" alt="" width="26" height="26">
+    </a>
+
+    <a class="icon-button" href="https://x.com/mojolauncher" aria-label="X (Twitter)">
+      <img class="icon-button__logo" src="assets/icons/x.svg" alt="" width="26" height="26">
+    </a>
+  </div>
+
+  <div class="lang">
+    <select class="lang__select" aria-label="Language">
+      <option value="en">English</option>
+      <option value="ru">Русский</option>
+    </select>
+  </div>
+</header>
+
+<main id="top" class="page">
+
+  <section class="hero block">
+    <p class="eyebrow" data-i18n="hero.eyebrow">Placeholder eyebrow text</p>
+    <h1 data-i18n="hero.title">Minecraft, anywhere you want it</h1>
+    <p class="lede" data-i18n="hero.lede">
+      Placeholder introduction paragraph. MojoLauncher is a free, open source launcher
+      that gets you into the game in a couple of taps. Replace this copy with the
+      real announcement text before launch.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--play" href="#download" data-i18n="hero.download">Download</a>
+      <a class="btn btn--outline" href="#features" data-i18n="hero.learn">Learn more</a>
+    </div>
+    <p class="hero__note" data-i18n="hero.note">Temporary test text &middot; version 0.0.0-placeholder</p>
+  </section>
+
+  <section class="block" id="features">
+    <div class="section-head">
+      <h2 data-i18n="features.title">Why MojoLauncher</h2>
+      <p data-i18n="features.subtitle">Short placeholder summary of the project for the feature grid below.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <img class="card__icon" src="assets/icons/gamepad.svg" alt="" width="30" height="30">
+        <h3 data-i18n="features.card1.title">Full control</h3>
+        <p data-i18n="features.card1.body">Placeholder body copy describing custom controls, runtime management and renderer options.</p>
+      </article>
+
+      <article class="card">
+        <img class="card__icon" src="assets/icons/java.svg" alt="" width="30" height="30">
+        <h3 data-i18n="features.card2.title">Mod friendly</h3>
+        <p data-i18n="features.card2.body">Placeholder body copy about installing .jar files, Fabric, Forge, Quilt and NeoForge.</p>
+      </article>
+
+      <article class="card">
+        <img class="card__icon" src="assets/icons/folder.svg" alt="" width="30" height="30">
+        <h3 data-i18n="features.card3.title">Instances</h3>
+        <p data-i18n="features.card3.body">Placeholder body copy about isolated game directories, profiles and quick switching.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="block" id="news">
+    <div class="section-head">
+      <h2 data-i18n="news.title">Latest news</h2>
+      <p data-i18n="news.subtitle">Three placeholder entries — swap them out for the real changelog posts.</p>
+    </div>
+
+    <div class="news">
+      <a class="news__item" href="#">
+        <span class="news__date">08.10.2026</span>
+        <span class="news__title" data-i18n="news.item1.title">Placeholder release announcement headline</span>
+        <span class="news__excerpt" data-i18n="news.item1.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
+      </a>
+      <a class="news__item" href="#">
+        <span class="news__date">27.09.2026</span>
+        <span class="news__title" data-i18n="news.item2.title">Placeholder performance update headline</span>
+        <span class="news__excerpt" data-i18n="news.item2.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
+      </a>
+      <a class="news__item" href="#">
+        <span class="news__date">12.09.2026</span>
+        <span class="news__title" data-i18n="news.item3.title">Placeholder community spotlight headline</span>
+        <span class="news__excerpt" data-i18n="news.item3.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="block" id="download">
+    <div class="section-head">
+      <h2 data-i18n="start.title">Get started</h2>
+      <p data-i18n="start.subtitle">Pick a destination below. Every button is placeholder navigation for now.</p>
+    </div>
+
+    <nav class="menu" aria-label="Site sections">
+      <div class="menu__row">
+        <a class="menu__button" href="#">
+          <img class="menu__icon" src="assets/icons/book.svg" alt="" width="30" height="30">
+          <span data-i18n="menu.wiki">Wiki</span>
+        </a>
+        <span class="menu__divider" aria-hidden="true"></span>
+        <a class="menu__button" href="#">
+          <img class="menu__icon menu__icon--discord" src="assets/icons/discord.svg" alt="" width="30" height="24">
+          <span data-i18n="menu.discord">Discord</span>
+        </a>
+      </div>
+
+      <a class="menu__button menu__button--full" href="#">
+        <img class="menu__icon" src="assets/icons/book.svg" alt="" width="30" height="30">
+        <span data-i18n="menu.docs">Documentation &amp; guides</span>
+      </a>
+      <a class="menu__button menu__button--full" href="#">
+        <img class="menu__icon" src="assets/icons/sliders.svg" alt="" width="30" height="30">
+        <span data-i18n="menu.settings">Advanced settings</span>
+      </a>
+      <a class="menu__button menu__button--full" href="#">
+        <img class="menu__icon" src="assets/icons/java.svg" alt="" width="30" height="30">
+        <span data-i18n="menu.jar">Run a .jar installer</span>
+      </a>
+      <a class="menu__button menu__button--full" href="#">
+        <img class="menu__icon" src="assets/icons/sharelog.svg" alt="" width="30" height="30">
+        <span data-i18n="menu.logs">Support &amp; log files</span>
+      </a>
+      <a class="menu__button menu__button--full" href="#">
+        <img class="menu__icon" src="assets/icons/folder.svg" alt="" width="30" height="30">
+        <span data-i18n="menu.folder">Open game directory</span>
+      </a>
+    </nav>
+  </section>
+
+  <section class="block outro">
+    <h2 data-i18n="outro.title">Ready when you are</h2>
+    <p data-i18n="outro.body">Placeholder closing paragraph. Tell readers where to get the launcher and what to do next.</p>
+    <a class="btn btn--play btn--wide" href="#download" data-i18n="outro.play">Play</a>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__meta">
+    <span data-i18n="footer.build">Latest release &middot; placeholder build</span>
+    <span class="footer__dot" aria-hidden="true"></span>
+    <span data-i18n="footer.docs">Docs</span>
+    <span class="footer__dot" aria-hidden="true"></span>
+    <span data-i18n="footer.privacy">Privacy</span>
+    <span class="footer__dot" aria-hidden="true"></span>
+    <span data-i18n="footer.source">Source</span>
+  </div>
+  <span class="footer__copy" data-i18n="footer.copy">&copy; 2026 MojoLauncher &mdash; temporary test footer text</span>
+</footer>
+
+<script src="i18n.js"></script>
+</body>
+</html>
