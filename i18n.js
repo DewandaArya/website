@@ -5,11 +5,12 @@
   var translations = window.MojoI18N;
 
   var STORAGE_KEY = "mojolauncher.lang";
-  var select = document.querySelector(".lang__select");
+  var selects = document.querySelectorAll(".lang__select");
 
   var supported = [];
-  if (select) {
-    for (var i = 0; i < select.options.length; i++) supported.push(select.options[i].value);
+  if (selects.length) {
+    var options = selects[0].options;
+    for (var i = 0; i < options.length; i++) supported.push(options[i].value);
   }
   if (!supported.length) supported = ["en"];
 
@@ -56,7 +57,7 @@
       var value = dict[key] != null ? dict[key] : defaults[key];
       if (value != null) el.textContent = value;
     });
-    if (select) select.value = lang;
+    selects.forEach(function (sel) { sel.value = lang; });
   }
 
   function setLang(lang) {
@@ -65,11 +66,11 @@
     loadLocale(lang).then(function () { apply(lang); });
   }
 
-  if (select) {
-    select.addEventListener("change", function () { setLang(select.value); });
-  }
+  selects.forEach(function (sel) {
+    sel.addEventListener("change", function () { setLang(sel.value); });
+  });
 
   var initial = detectLang();
-  if (select) select.value = initial;
+  selects.forEach(function (sel) { sel.value = initial; });
   loadLocale(initial).then(function () { apply(initial); });
 })();

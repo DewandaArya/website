@@ -23,6 +23,10 @@
     <a href="#download" data-i18n="nav.download">Download</a>
   </nav>
 
+  <button class="topbar__toggle" type="button" aria-label="Settings" aria-controls="sidebar" aria-expanded="false">
+    <img src="assets/icons/sliders.svg" alt="" width="26" height="26">
+  </button>
+
   <div class="socials">
     <a class="icon-button" href="https://github.com/MojoLauncher/MojoLauncher" aria-label="GitHub">
       <img class="icon-button__logo" src="assets/icons/github.svg" alt="" width="26" height="26">
@@ -54,6 +58,62 @@
     </select>
   </div>
 </header>
+
+<aside id="sidebar" class="sidebar">
+  <div class="sidebar__head">
+    <button class="sidebar__back" type="button" aria-label="Back">
+      <img src="assets/icons/arrow-left.svg" alt="" width="24" height="24">
+    </button>
+    <span class="sidebar__title" data-i18n="menu.title">Settings</span>
+  </div>
+
+  <div class="sidebar__content">
+    <h2 class="pref-category" data-i18n="menu.language">Language</h2>
+
+    <div class="pref-item">
+      <img class="pref-item__icon" src="assets/icons/translate.svg" alt="" width="28" height="24">
+      <span class="pref-item__text" data-i18n="menu.language">Language</span>
+      <div class="lang">
+        <select class="lang__select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="ru">Русский</option>
+        </select>
+      </div>
+    </div>
+
+    <h2 class="pref-category" data-i18n="menu.community">Community</h2>
+
+    <a class="pref-item" href="https://github.com/MojoLauncher/MojoLauncher">
+      <img class="pref-item__icon" src="assets/icons/github.svg" alt="" width="26" height="26">
+      <span class="pref-item__text">GitHub</span>
+      <img class="pref-item__chevron" src="assets/icons/chevron-right.svg" alt="" width="20" height="20">
+    </a>
+
+    <a class="pref-item" href="https://discord.gg/VHdwQFsaGX">
+      <img class="pref-item__icon" src="assets/icons/discord.svg" alt="" width="30" height="23">
+      <span class="pref-item__text">Discord<small class="pref-item__summary">English (UK)</small></span>
+      <img class="pref-item__chevron" src="assets/icons/chevron-right.svg" alt="" width="20" height="20">
+    </a>
+
+    <a class="pref-item" href="https://t.me/MojoLauncher">
+      <img class="pref-item__icon" src="assets/icons/telegram.svg" alt="" width="26" height="26">
+      <span class="pref-item__text">Telegram<small class="pref-item__summary">Русский (RU)</small></span>
+      <img class="pref-item__chevron" src="assets/icons/chevron-right.svg" alt="" width="20" height="20">
+    </a>
+
+    <a class="pref-item" href="https://reddit.com/r/MojoLauncher">
+      <img class="pref-item__icon" src="assets/icons/reddit.svg" alt="" width="26" height="26">
+      <span class="pref-item__text">Reddit</span>
+      <img class="pref-item__chevron" src="assets/icons/chevron-right.svg" alt="" width="20" height="20">
+    </a>
+
+    <a class="pref-item" href="https://x.com/mojolauncher">
+      <img class="pref-item__icon" src="assets/icons/x.svg" alt="" width="26" height="26">
+      <span class="pref-item__text">X (Twitter)</span>
+      <img class="pref-item__chevron" src="assets/icons/chevron-right.svg" alt="" width="20" height="20">
+    </a>
+  </div>
+</aside>
 
 <main id="top" class="page">
 
@@ -188,5 +248,6 @@
 </footer>
 
 <script src="i18n.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
