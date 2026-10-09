@@ -16,7 +16,7 @@ window.MojoI18N.ru = {
   "features.card1.title": "Полный контроль",
   "features.card1.body": "Легко настройте лаунчер под себя за счёт наэкранного управления с расширенным функционалом, настроек производительности и множества драйверов и слоёв трансляции OpenGL",
   "features.card2.title": "Поддержка модов",
-  "features.card2.body": "Легко установите ваши любимые модпаки и загрузчики модов.",
+  "features.card2.body": "Легко установите ваши любимые модпаки и загрузчики модов. MojoLauncher предоставляет высокий уровень совместимости с модификациями для Minecraft.",
   "features.card3.title": "Установки",
   "features.card3.body": "Данные игры автоматически разделены для модифицированных установок - нет необходимости разбираться в своих папках.",
 
@@ -39,7 +39,7 @@ window.MojoI18N.ru = {
   "components.subtitle": "MojoLauncher собран из компонентов с открытым исходным кодом. Большинство из них поддерживается в организации MojoLauncher.",
 
   "components.ltw.title": "LTW - Large Thin Wrapper",
-  "components.ltw.body": "Легковесный транслятор, преобразующий OpenGL в OpenGL ES 3. Частично реализует OpenGL 3.3 Core.",
+  "components.ltw.body": "Легковесный транслятор, преобразующий OpenGL в OpenGL ES 3. Частично реализует OpenGL 3.3 Core, обладает хорошей совместимостью с наборами шейдеров и высокой производительностью.",
   "components.ltw.link": "LTW на GitHub",
 
   "components.gl4es.title": "GL4ES",
@@ -59,7 +59,7 @@ window.MojoI18N.ru = {
   "components.openjdk.link": "Сборки OpenJDK",
 
   "components.mesa.title": "Mesa 3D",
-  "components.mesa.body": "Форк проекта Mesa 3D c дополнительными изменениями совместимости для Turnip, поддержкой Kopper в Android EGL, и реализация работы с KGSL для Turnip",
+  "components.mesa.body": "Форк проекта Mesa 3D c дополнительными изменениями совместимости для Turnip, поддержкой Kopper в Android EGL, и реализация работы с KGSL для Freedreno (Gallium)",
   "components.mesa.note": "В связи с злоупотреблением этого кода третьими лицами, форк не доступен публично",
   "components.mesa.link": "Оригинальная Mesa",
 

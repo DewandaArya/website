@@ -16,7 +16,7 @@ window.MojoI18N.en = {
   "features.card1.title": "Full control",
   "features.card1.body": "Easily customize the launcher with advanced on-screen controls, performance tuning options and a variety of OpenGL drivers and translation layers",
   "features.card2.title": "Mod friendly",
-  "features.card2.body": "Your favorite mods and modloaders - easily installable",
+  "features.card2.body": "Your favorite modpacks and modloaders - easily installable. The launcher is compatible with most Minecraft mods.",
   "features.card3.title": "Instances",
   "features.card3.body": "Separated game data by default for modded installations - no need to juggle custom directories.",
 
@@ -39,7 +39,7 @@ window.MojoI18N.en = {
   "components.subtitle": "MojoLauncher is assembled from open-source components, most of them maintained under the MojoLauncher organisation.",
 
   "components.ltw.title": "LTW - Large Thin Wrapper",
-  "components.ltw.body": "A thin OpenGL-to-OpenGL ES 3 translator that partially implements OpenGL 3.3 Core.",
+  "components.ltw.body": "A thin OpenGL-to-OpenGL ES 3 translator that partially implements OpenGL 3.3 Core. It is highly compatible with a lot of shaders while providing great performance.",
   "components.ltw.link": "View LTW on GitHub",
 
   "components.gl4es.title": "GL4ES",
