@@ -34,7 +34,7 @@ window.MojoI18N.ru = {
   "download.subtitle": "Скачайте лаунчер для Android. Стабильные сборки — в Google Play, самые свежие — на GitHub.",
   "download.nightly": "Ночная сборка",
   "download.nightlyWarning": "Ночные сборки экспериментальны и могут быть нестабильными или сломанными — используйте их на свой риск.",
-  "play.src": "assets/badges/google-play-ru.png",
+  "play.src": "assets/badges/google-play-ru.webp",
   "play.alt": "Доступно в Google Play",
 
   "components.title": "Компоненты",

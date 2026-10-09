@@ -34,7 +34,7 @@ window.MojoI18N.en = {
   "download.subtitle": "Get the launcher for Android. Stable builds come from Google Play; the newest builds are published on GitHub.",
   "download.nightly": "Nightly build",
   "download.nightlyWarning": "Nightly builds are experimental and can be unstable or broken \u2014 use them at your own risk.",
-  "play.src": "assets/badges/google-play-en.png",
+  "play.src": "assets/badges/google-play-en.webp",
   "play.alt": "Get it on Google Play",
 
   "components.title": "Components",
