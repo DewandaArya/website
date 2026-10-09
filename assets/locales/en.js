@@ -59,7 +59,7 @@ window.MojoI18N.en = {
   "components.openjdk.link": "OpenJDK builds",
 
   "components.mesa.title": "Mesa 3D",
-  "components.mesa.body": "A fork of the upstream Mesa 3D project with additional compatibility patches for Turnip, Android EGL support for Kopper and Freedreno (Gallium) on KGSL.",
+  "components.mesa.body": "A fork of the Mesa 3D project with additional compatibility patches for Turnip, Android EGL support for Kopper and Freedreno (Gallium) on KGSL.",
   "components.mesa.note": "Due to abuse by third parties, the fork is not available to the public",
   "components.mesa.link": "Upstream Mesa",
 
