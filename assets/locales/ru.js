@@ -44,14 +44,26 @@ window.MojoI18N.ru = {
   "components.ltw.body": "Тонкая обёртка, транслирующая OpenGL Core в OpenGL ES. Обеспечивает работу рендерера OpenGL ES 3, благодаря чему современные версии Minecraft запускаются на GPU Android.",
   "components.ltw.link": "LTW на GitHub",
 
+  "components.gl4es.title": "GL4ES",
+  "components.gl4es.body": "Слой трансляции OpenGL в OpenGL ES для рендерера OpenGL ES 2. Этот форк \u00abHoly GL4ES\u00bb настроен под запуск Minecraft на Android.",
+  "components.gl4es.link": "Holy GL4ES на GitHub",
+
   "components.mojoexec.title": "MojoExec",
   "components.mojoexec.body": "Нативная утилита для портирования: загружает графические драйверы, настраивает EGL и Vulkan и перехватывает точки входа Vulkan. Также предоставляет загрузчик с обходом пространства имён для Turnip и других драйверов.",
   "components.mojoexec.link": "MojoExec на GitHub",
 
   "components.sdl.title": "SDL / GLFW",
   "components.sdl.body": "Два взаимозаменяемых бэкенда окон и ввода. Оба создают окно игры и обрабатывают ввод с клавиатуры, мыши и геймпада; лаунчер выбирает SDL3 или GLFW в зависимости от версии Minecraft.",
-  "components.sdl.note": "Проект поддерживает форк, потому что Android-бэкенд upstream SDL рассчитан на то, что активити и окном владеет сам SDL. MojoSDL добавляет слой JNI-привязок, собственную работу с поверхностью и EGL и поддержку нескольких окон, чтобы SDL работал внутри активити и поверхности лаунчера и загружал графические драйверы через MojoExec.",
-  "components.glfw.note": "GLFW — тоже хардфорк: upstream GLFW вообще не поддерживает Android, поэтому форк добавляет платформу Android и соответствующие JNI-привязки.",
+  "components.sdl.note": "SDL3 и GLFW поддерживаются в виде форков, адаптированных для MojoLauncher.",
+
+  "components.openjdk.title": "OpenJDK",
+  "components.openjdk.body": "Среда выполнения Java, в которой запускается игра. MojoLauncher поставляет multiarch-сборку OpenJDK 8 для всех четырёх ABI Android, поэтому отдельно устанавливать среду выполнения не нужно.",
+  "components.openjdk.link": "Сборки OpenJDK",
+
+  "components.mesa.title": "Mesa 3D",
+  "components.mesa.body": "Графический стек для рендереров на Mesa — Zink поверх Vulkan и Freedreno/Turnip. MojoLauncher собирает пропатченный форк Mesa 26.2 с поддержкой Android и дополнительными драйверами Adreno.",
+  "components.mesa.note": "Поддерживается как приватный форк; оригинальная Mesa — на mesa3d.org.",
+  "components.mesa.link": "Оригинальная Mesa",
 
   "menu.language": "Язык",
   "menu.community": "Сообщество",

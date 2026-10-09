@@ -44,14 +44,26 @@ window.MojoI18N.en = {
   "components.ltw.body": "A thin OpenGL core-to-OpenGL ES wrapper that powers the OpenGL ES 3 renderer. It translates desktop OpenGL calls so modern Minecraft versions can run on Android GPUs.",
   "components.ltw.link": "View LTW on GitHub",
 
+  "components.gl4es.title": "GL4ES",
+  "components.gl4es.body": "The OpenGL-to-OpenGL ES translation layer behind the OpenGL ES 2 renderer. This \u201cHoly GL4ES\u201d fork is tuned for running Minecraft on Android.",
+  "components.gl4es.link": "View Holy GL4ES on GitHub",
+
   "components.mojoexec.title": "MojoExec",
   "components.mojoexec.body": "A native porting utility that loads graphics drivers, sets up EGL and Vulkan, and hooks Vulkan entry points. It also provides the namespace-bypass loader used to load Turnip and other drivers.",
   "components.mojoexec.link": "View MojoExec on GitHub",
 
   "components.sdl.title": "SDL / GLFW",
   "components.sdl.body": "The two interchangeable window and input backends. Both create the game window and handle keyboard, mouse and gamepad input; the launcher picks SDL3 or GLFW depending on the Minecraft version being launched.",
-  "components.sdl.note": "A custom fork is maintained because upstream SDL\u2019s Android backend expects to own the activity and window. MojoSDL adds a JNI binding layer, reworked surface/EGL handling and multi-window support so SDL can run inside the launcher\u2019s own activity and surface, and load graphics drivers through MojoExec.",
-  "components.glfw.note": "GLFW is a hardfork as well: upstream GLFW has no Android support at all, so the fork adds the Android platform and matching JNI bindings.",
+  "components.sdl.note": "Both SDL3 and GLFW are maintained as forks adapted for MojoLauncher.",
+
+  "components.openjdk.title": "OpenJDK",
+  "components.openjdk.body": "The Java runtime that runs the game. MojoLauncher ships a multiarch OpenJDK 8 build covering all four Android ABIs, so players don\u2019t have to install a runtime separately.",
+  "components.openjdk.link": "OpenJDK builds",
+
+  "components.mesa.title": "Mesa 3D",
+  "components.mesa.body": "The graphics stack behind the Mesa renderers \u2014 Zink over Vulkan and Freedreno/Turnip. MojoLauncher builds a patched Mesa 26.2 fork with Android support and extra Adreno drivers.",
+  "components.mesa.note": "Maintained as a private fork; upstream Mesa lives at mesa3d.org.",
+  "components.mesa.link": "Upstream Mesa",
 
   "menu.language": "Language",
   "menu.community": "Community",
