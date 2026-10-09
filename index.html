@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MojoLauncher</title>
-<meta name="description" content="MojoLauncher — placeholder official website.">
+<meta name="description" content="MojoLauncher - official website">
 <link rel="icon" href="assets/logo.webp">
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +19,7 @@
   <nav class="topbar__nav" aria-label="Main">
     <a href="#top" data-i18n="nav.home">Home</a>
     <a href="#features" data-i18n="nav.features">Features</a>
-    <a href="#news" data-i18n="nav.news">News</a>
+    <a href="#news" data-i18n="nav.news">Releases</a>
     <a href="#download" data-i18n="nav.download">Download</a>
     <a href="#components" data-i18n="nav.components">Components</a>
   </nav>
@@ -112,43 +112,39 @@
 <main id="top" class="page">
 
   <section class="hero block">
-    <p class="eyebrow" data-i18n="hero.eyebrow">Placeholder eyebrow text</p>
-    <h1 data-i18n="hero.title">Minecraft, anywhere you want it</h1>
+    <h1 data-i18n="hero.title">Minecraft, anywhere, anytime.</h1>
     <p class="lede" data-i18n="hero.lede">
-      Placeholder introduction paragraph. MojoLauncher is a free, open source launcher
-      that gets you into the game in a couple of taps. Replace this copy with the
-      real announcement text before launch.
+      MojoLauncher is an open-source Minecraft: Java Edition launcher for Android devices.
     </p>
     <div class="hero__actions">
       <a class="btn btn--play" href="#download" data-i18n="hero.download">Download</a>
       <a class="btn btn--outline" href="#features" data-i18n="hero.learn">Learn more</a>
     </div>
-    <p class="hero__note" data-i18n="hero.note">Temporary test text &middot; version 0.0.0-placeholder</p>
   </section>
 
   <section class="block" id="features">
     <div class="section-head">
       <h2 data-i18n="features.title">Why MojoLauncher</h2>
-      <p data-i18n="features.subtitle">Short placeholder summary of the project for the feature grid below.</p>
+      <p data-i18n="features.subtitle">Check out the launcher's advanced features</p>
     </div>
 
     <div class="cards">
       <article class="card">
         <img class="card__icon" src="assets/icons/gamepad.svg" alt="" width="30" height="30">
         <h3 data-i18n="features.card1.title">Full control</h3>
-        <p data-i18n="features.card1.body">Placeholder body copy describing custom controls, runtime management and renderer options.</p>
+        <p data-i18n="features.card1.body">Easily customize the launcher with advanced on-screen controls, performance tuning options and a variety of OpenGL drivers and translation layers</p>
       </article>
 
       <article class="card">
         <img class="card__icon" src="assets/icons/java.svg" alt="" width="30" height="30">
         <h3 data-i18n="features.card2.title">Mod friendly</h3>
-        <p data-i18n="features.card2.body">Placeholder body copy about installing .jar files, Fabric, Forge, Quilt and NeoForge.</p>
+        <p data-i18n="features.card2.body">Your favorite mods and modloaders - easily installable</p>
       </article>
 
       <article class="card">
         <img class="card__icon" src="assets/icons/folder.svg" alt="" width="30" height="30">
         <h3 data-i18n="features.card3.title">Instances</h3>
-        <p data-i18n="features.card3.body">Placeholder body copy about isolated game directories, profiles and quick switching.</p>
+        <p data-i18n="features.card3.body">Separated game data by default for modded installations - no need to juggle custom directories.</p>
       </article>
     </div>
   </section>
@@ -171,7 +167,7 @@
   <section class="block" id="download">
     <div class="section-head">
       <h2 data-i18n="download.title">Download MojoLauncher</h2>
-      <p data-i18n="download.subtitle">Get the launcher for Android. Stable builds come from Google Play; the newest builds are published on GitHub.</p>
+      <p data-i18n="download.subtitle">Get the launcher for Android. Stable versions are available on Google Play, nightlies are available on GitHub.</p>
     </div>
 
     <div class="downloads">
@@ -187,7 +183,7 @@
          href="https://github.com/MojoLauncher/MojoLauncher/releases/tag/nightly"
          target="_blank" rel="noopener noreferrer" data-i18n="download.nightly">Nightly build</a>
 
-      <p class="downloads__warning" data-i18n="download.nightlyWarning">Nightly builds are experimental and can be unstable or broken &mdash; use them at your own risk.</p>
+      <p class="downloads__warning" data-i18n="download.nightlyWarning">Nightly builds are updated frequently, contain experimental features and may have significant, potentially game-breaking bugs. Only use them if you know what you're doing.</p>
     </div>
   </section>
 
@@ -200,8 +196,8 @@
     <div class="cards">
       <article class="card">
         <img class="card__icon" src="assets/icons/image-renderer.svg" alt="" width="30" height="30">
-        <h3 data-i18n="components.ltw.title">LTW &mdash; Large Thin Wrapper</h3>
-        <p data-i18n="components.ltw.body">A thin OpenGL core-to-OpenGL ES wrapper that powers the OpenGL ES 3 renderer. It translates desktop OpenGL calls so modern Minecraft versions can run on Android GPUs.</p>
+        <h3 data-i18n="components.ltw.title">LTW - Large Thin Wrapper</h3>
+        <p data-i18n="components.ltw.body">A thin OpenGL-to-OpenGL ES 3 translator that partially implements OpenGL 3.3 Core.</p>
         <div class="card__meta">
           <span class="card__license">LGPL-3.0</span>
           <a class="card__link" href="https://github.com/MojoLauncher/LTW"
@@ -212,7 +208,7 @@
       <article class="card">
         <img class="card__icon" src="assets/icons/image-renderer.svg" alt="" width="30" height="30">
         <h3 data-i18n="components.gl4es.title">GL4ES</h3>
-        <p data-i18n="components.gl4es.body">The OpenGL-to-OpenGL ES translation layer behind the OpenGL ES 2 renderer. This &ldquo;Holy GL4ES&rdquo; fork is tuned for running Minecraft on Android.</p>
+        <p data-i18n="components.gl4es.body">A highly efficient OpenGL-to-OpenGL ES 2 translator with fixed-function pipeline support. The Holy GL4ES fork includes extended shader capabilities and mod support.</p>
         <div class="card__meta">
           <a class="card__link" href="https://github.com/artdeell/gl4es_extra_extra"
              target="_blank" rel="noopener noreferrer" data-i18n="components.gl4es.link">View Holy GL4ES on GitHub</a>
@@ -223,7 +219,7 @@
       <article class="card">
         <img class="card__icon" src="assets/icons/sharelog.svg" alt="" width="30" height="30">
         <h3 data-i18n="components.mojoexec.title">MojoExec</h3>
-        <p data-i18n="components.mojoexec.body">A native porting utility that loads graphics drivers, sets up EGL and Vulkan, and hooks Vulkan entry points. It also provides the namespace-bypass loader used to load Turnip and other drivers.</p>
+        <p data-i18n="components.mojoexec.body">A utility library that implements custom Vulkan and OpenGL driver loading.</p>
         <div class="card__meta">
           <span class="card__license">MIT</span>
           <a class="card__link" href="https://github.com/MojoLauncher/mojoexec"
@@ -234,7 +230,7 @@
       <article class="card">
         <img class="card__icon" src="assets/icons/gamepad.svg" alt="" width="30" height="30">
         <h3 data-i18n="components.sdl.title">SDL / GLFW</h3>
-        <p data-i18n="components.sdl.body">The two interchangeable window and input backends. Both create the game window and handle keyboard, mouse and gamepad input; the launcher picks SDL3 or GLFW depending on the Minecraft version being launched.</p>
+        <p data-i18n="components.sdl.body">The two interchangeable window and input backends. Both create the game window and handle keyboard, mouse and gamepad input; the launcher picks SDL3 or GLFW depending on the game's requirements.</p>
         <p class="card__note" data-i18n="components.sdl.note">Both SDL3 and GLFW are maintained as forks adapted for MojoLauncher.</p>
         <div class="card__meta">
           <a class="card__link" href="https://github.com/MojoLauncher/MojoSDL"
@@ -249,7 +245,7 @@
       <article class="card">
         <img class="card__icon" src="assets/icons/java.svg" alt="" width="30" height="30">
         <h3 data-i18n="components.openjdk.title">OpenJDK</h3>
-        <p data-i18n="components.openjdk.body">The Java runtime that runs the game. MojoLauncher ships a multiarch OpenJDK 8 build covering all four Android ABIs, so players don't have to install a runtime separately.</p>
+        <p data-i18n="components.openjdk.body">The Java runtime that powers the game. The MojoLauncher OpenJDK builds are compiled for all major Android architectures and include patches for reliable networking, X11-free AWT GUI and fixes for Android quirks.</p>
         <div class="card__meta">
           <a class="card__link" href="https://github.com/MojoLauncher/android-openjdk-build-multiarch"
              target="_blank" rel="noopener noreferrer" data-i18n="components.openjdk.link">OpenJDK builds</a>
@@ -260,7 +256,7 @@
       <article class="card">
         <img class="card__icon" src="assets/icons/image-renderer.svg" alt="" width="30" height="30">
         <h3 data-i18n="components.mesa.title">Mesa 3D</h3>
-        <p data-i18n="components.mesa.body">The graphics stack behind the Mesa renderers &mdash; Zink over Vulkan and Freedreno/Turnip. MojoLauncher builds a patched Mesa 26.2 fork with Android support and extra Adreno drivers.</p>
+        <p data-i18n="components.mesa.body">A fork of the upstream Mesa 3D project with additional compatibility patches for Turnip, Android EGL support for Kopper and Freedreno (Gallium) on KGSL.</p>
         <p class="card__note" data-i18n="components.mesa.note">Maintained as a private fork; upstream Mesa lives at mesa3d.org.</p>
         <div class="card__meta">
           <a class="card__link" href="https://www.mesa3d.org/"
@@ -273,7 +269,7 @@
 
   <section class="block outro">
     <h2 data-i18n="outro.title">Ready when you are</h2>
-    <p data-i18n="outro.body">Placeholder closing paragraph. Tell readers where to get the launcher and what to do next.</p>
+    <p data-i18n="outro.body">Download and play right away</p>
     <a class="btn btn--play btn--wide" href="#download" data-i18n="outro.play">Play</a>
   </section>
 
@@ -281,15 +277,13 @@
 
 <footer class="footer">
   <div class="footer__meta">
-    <span data-i18n="footer.build">Latest release &middot; placeholder build</span>
-    <span class="footer__dot" aria-hidden="true"></span>
     <span data-i18n="footer.docs">Docs</span>
     <span class="footer__dot" aria-hidden="true"></span>
-    <span data-i18n="footer.privacy">Privacy</span>
+    <a href="https://github.com/MojoLauncher/legal/blob/main/PRIVACY_POLICY_en.md"><span data-i18n="footer.privacy">Privacy</span></a>
     <span class="footer__dot" aria-hidden="true"></span>
-    <span data-i18n="footer.source">Source</span>
+    <a href="https://github.com/MojoLauncher/website"><span data-i18n="footer.source">Source</span></a>
   </div>
-  <span class="footer__copy" data-i18n="footer.copy">&copy; 2026 MojoLauncher &mdash; temporary test footer text</span>
+  <span class="footer__copy" data-i18n="footer.copy">&copy; 2026 MojoLauncher</span>
 </footer>
 
 <script src="i18n.js"></script>
