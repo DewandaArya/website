@@ -4,6 +4,7 @@ window.MojoI18N.en = {
   "nav.features": "Features",
   "nav.news": "News",
   "nav.download": "Download",
+  "nav.components": "Components",
 
   "hero.eyebrow": "Placeholder eyebrow text",
   "hero.title": "Minecraft, anywhere you want it",
@@ -35,6 +36,22 @@ window.MojoI18N.en = {
   "download.nightlyWarning": "Nightly builds are experimental and can be unstable or broken \u2014 use them at your own risk.",
   "play.src": "assets/badges/google-play-en.png",
   "play.alt": "Get it on Google Play",
+
+  "components.title": "Components",
+  "components.subtitle": "MojoLauncher is assembled from open-source components, most of them maintained under the MojoLauncher organisation.",
+
+  "components.ltw.title": "LTW \u2014 Large Thin Wrapper",
+  "components.ltw.body": "A thin OpenGL core-to-OpenGL ES wrapper that powers the OpenGL ES 3 renderer. It translates desktop OpenGL calls so modern Minecraft versions can run on Android GPUs.",
+  "components.ltw.link": "View LTW on GitHub",
+
+  "components.mojoexec.title": "MojoExec",
+  "components.mojoexec.body": "A native porting utility that loads graphics drivers, sets up EGL and Vulkan, and hooks Vulkan entry points. It also provides the namespace-bypass loader used to load Turnip and other drivers.",
+  "components.mojoexec.link": "View MojoExec on GitHub",
+
+  "components.sdl.title": "SDL / GLFW",
+  "components.sdl.body": "The two interchangeable window and input backends. Both create the game window and handle keyboard, mouse and gamepad input; the launcher picks SDL3 or GLFW depending on the Minecraft version being launched.",
+  "components.sdl.note": "A custom fork is maintained because upstream SDL\u2019s Android backend expects to own the activity and window. MojoSDL adds a JNI binding layer, reworked surface/EGL handling and multi-window support so SDL can run inside the launcher\u2019s own activity and surface, and load graphics drivers through MojoExec.",
+  "components.glfw.note": "GLFW is a hardfork as well: upstream GLFW has no Android support at all, so the fork adds the Android platform and matching JNI bindings.",
 
   "menu.language": "Language",
   "menu.community": "Community",

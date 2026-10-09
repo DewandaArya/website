@@ -4,6 +4,7 @@ window.MojoI18N.ru = {
   "nav.features": "Возможности",
   "nav.news": "Новости",
   "nav.download": "Скачать",
+  "nav.components": "Компоненты",
 
   "hero.eyebrow": "Текст-заглушка",
   "hero.title": "Minecraft — где угодно",
@@ -35,6 +36,22 @@ window.MojoI18N.ru = {
   "download.nightlyWarning": "Ночные сборки экспериментальны и могут быть нестабильными или сломанными — используйте их на свой риск.",
   "play.src": "assets/badges/google-play-ru.png",
   "play.alt": "Доступно в Google Play",
+
+  "components.title": "Компоненты",
+  "components.subtitle": "MojoLauncher собран из компонентов с открытым исходным кодом — большинство из них поддерживается в организации MojoLauncher.",
+
+  "components.ltw.title": "LTW \u2014 Large Thin Wrapper",
+  "components.ltw.body": "Тонкая обёртка, транслирующая OpenGL Core в OpenGL ES. Обеспечивает работу рендерера OpenGL ES 3, благодаря чему современные версии Minecraft запускаются на GPU Android.",
+  "components.ltw.link": "LTW на GitHub",
+
+  "components.mojoexec.title": "MojoExec",
+  "components.mojoexec.body": "Нативная утилита для портирования: загружает графические драйверы, настраивает EGL и Vulkan и перехватывает точки входа Vulkan. Также предоставляет загрузчик с обходом пространства имён для Turnip и других драйверов.",
+  "components.mojoexec.link": "MojoExec на GitHub",
+
+  "components.sdl.title": "SDL / GLFW",
+  "components.sdl.body": "Два взаимозаменяемых бэкенда окон и ввода. Оба создают окно игры и обрабатывают ввод с клавиатуры, мыши и геймпада; лаунчер выбирает SDL3 или GLFW в зависимости от версии Minecraft.",
+  "components.sdl.note": "Проект поддерживает форк, потому что Android-бэкенд upstream SDL рассчитан на то, что активити и окном владеет сам SDL. MojoSDL добавляет слой JNI-привязок, собственную работу с поверхностью и EGL и поддержку нескольких окон, чтобы SDL работал внутри активити и поверхности лаунчера и загружал графические драйверы через MojoExec.",
+  "components.glfw.note": "GLFW — тоже хардфорк: upstream GLFW вообще не поддерживает Android, поэтому форк добавляет платформу Android и соответствующие JNI-привязки.",
 
   "menu.language": "Язык",
   "menu.community": "Сообщество",

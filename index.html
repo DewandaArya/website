@@ -21,6 +21,7 @@
     <a href="#features" data-i18n="nav.features">Features</a>
     <a href="#news" data-i18n="nav.news">News</a>
     <a href="#download" data-i18n="nav.download">Download</a>
+    <a href="#components" data-i18n="nav.components">Components</a>
   </nav>
 
   <button class="topbar__toggle" type="button" aria-label="Settings" aria-controls="sidebar" aria-expanded="false">
@@ -188,6 +189,53 @@
            target="_blank" rel="noopener noreferrer" data-i18n="download.nightly">Nightly build</a>
         <p class="downloads__warning" data-i18n="download.nightlyWarning">Nightly builds are experimental and can be unstable or broken &mdash; use them at your own risk.</p>
       </div>
+    </div>
+  </section>
+
+  <section class="block" id="components">
+    <div class="section-head">
+      <h2 data-i18n="components.title">Components</h2>
+      <p data-i18n="components.subtitle">MojoLauncher is assembled from open-source components, most of them maintained under the MojoLauncher organisation.</p>
+    </div>
+
+    <div class="cards">
+      <article class="card">
+        <img class="card__icon" src="assets/icons/sliders.svg" alt="" width="30" height="30">
+        <h3 data-i18n="components.ltw.title">LTW &mdash; Large Thin Wrapper</h3>
+        <p data-i18n="components.ltw.body">A thin OpenGL core-to-OpenGL ES wrapper that powers the OpenGL ES 3 renderer. It translates desktop OpenGL calls so modern Minecraft versions can run on Android GPUs.</p>
+        <div class="card__meta">
+          <span class="card__license">LGPL-3.0</span>
+          <a class="card__link" href="https://github.com/MojoLauncher/LTW"
+             target="_blank" rel="noopener noreferrer" data-i18n="components.ltw.link">View LTW on GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card__icon" src="assets/icons/java.svg" alt="" width="30" height="30">
+        <h3 data-i18n="components.mojoexec.title">MojoExec</h3>
+        <p data-i18n="components.mojoexec.body">A native porting utility that loads graphics drivers, sets up EGL and Vulkan, and hooks Vulkan entry points. It also provides the namespace-bypass loader used to load Turnip and other drivers.</p>
+        <div class="card__meta">
+          <span class="card__license">MIT</span>
+          <a class="card__link" href="https://github.com/MojoLauncher/mojoexec"
+             target="_blank" rel="noopener noreferrer" data-i18n="components.mojoexec.link">View MojoExec on GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <img class="card__icon" src="assets/icons/gamepad.svg" alt="" width="30" height="30">
+        <h3 data-i18n="components.sdl.title">SDL / GLFW</h3>
+        <p data-i18n="components.sdl.body">The two interchangeable window and input backends. Both create the game window and handle keyboard, mouse and gamepad input; the launcher picks SDL3 or GLFW depending on the Minecraft version being launched.</p>
+        <p class="card__note" data-i18n="components.sdl.note">A custom fork is maintained because upstream SDL&rsquo;s Android backend expects to own the activity and window. MojoSDL adds a JNI binding layer, reworked surface/EGL handling and multi-window support so SDL can run inside the launcher&rsquo;s own activity and surface, and load graphics drivers through MojoExec.</p>
+        <p class="card__note" data-i18n="components.glfw.note">GLFW is a hardfork as well: upstream GLFW has no Android support at all, so the fork adds the Android platform and matching JNI bindings.</p>
+        <div class="card__meta">
+          <a class="card__link" href="https://github.com/MojoLauncher/MojoSDL"
+             target="_blank" rel="noopener noreferrer">SDL</a>
+          <span class="card__license">zlib</span>
+          <a class="card__link" href="https://github.com/MojoLauncher/glfw"
+             target="_blank" rel="noopener noreferrer">GLFW</a>
+          <span class="card__license">zlib</span>
+        </div>
+      </article>
     </div>
   </section>
 
