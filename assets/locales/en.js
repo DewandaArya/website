@@ -36,16 +36,6 @@ window.MojoI18N.en = {
   "play.src": "assets/badges/google-play-en.png",
   "play.alt": "Get it on Google Play",
 
-  "start.title": "Get started",
-  "start.subtitle": "Pick a destination below. Every button is placeholder navigation for now.",
-  "menu.wiki": "Wiki",
-  "menu.discord": "Discord",
-  "menu.docs": "Documentation & guides",
-  "menu.settings": "Advanced settings",
-  "menu.jar": "Run a .jar installer",
-  "menu.logs": "Support & log files",
-  "menu.folder": "Open game directory",
-
   "menu.language": "Language",
   "menu.community": "Community",
 

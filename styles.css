@@ -434,46 +434,6 @@ h1, h2, h3 {
   color: var(--text-dim);
 }
 
-/* ---------- launcher style navigation buttons ---------- */
-.menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.menu__row {
-  display: flex;
-}
-
-.menu__divider {
-  width: 1px;
-  background: var(--divider);
-}
-
-.menu__button {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  height: 66px;
-  padding: 0 22px;
-  font-size: 13px;
-  transition: background 0.15s;
-}
-
-.menu__row .menu__button { flex: 1; justify-content: center; }
-
-.menu__button:hover { background: var(--ripple); }
-
-.menu__icon {
-  flex: none;
-  width: 30px;
-  height: 30px;
-}
-
-.menu__icon--discord {
-  width: 30px;
-  height: 24px;
-}
-
 /* ---------- outro ---------- */
 .outro { text-align: center; }
 
@@ -523,9 +483,6 @@ h1, h2, h3 {
   .icon-button { width: 44px; }
   .news__item { grid-template-columns: 1fr; }
   .news__date { grid-row: auto; }
-  .menu__row { flex-direction: column; }
-  .menu__row .menu__button { justify-content: flex-start; }
-  .menu__divider { width: auto; height: 1px; }
   .btn { width: 100%; }
 }
 

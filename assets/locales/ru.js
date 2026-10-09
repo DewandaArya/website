@@ -36,16 +36,6 @@ window.MojoI18N.ru = {
   "play.src": "assets/badges/google-play-ru.png",
   "play.alt": "Доступно в Google Play",
 
-  "start.title": "С чего начать",
-  "start.subtitle": "Выберите раздел ниже. Все кнопки пока ведут в никуда.",
-  "menu.wiki": "Вики",
-  "menu.discord": "Discord",
-  "menu.docs": "Документация и руководства",
-  "menu.settings": "Дополнительные настройки",
-  "menu.jar": "Запустить установщик .jar",
-  "menu.logs": "Поддержка и логи",
-  "menu.folder": "Открыть папку игры",
-
   "menu.language": "Язык",
   "menu.community": "Сообщество",
 
