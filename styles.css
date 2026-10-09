@@ -634,12 +634,6 @@ h1, h2, h3 {
     overflow-wrap: anywhere;
   }
 
-  .pref-item__summary {
-    margin-top: 2px;
-    font-size: 12px;
-    color: var(--text-dim);
-  }
-
   .pref-item__chevron {
     flex: none;
     width: 20px;

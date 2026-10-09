@@ -46,7 +46,6 @@ window.MojoI18N.ru = {
   "menu.logs": "Поддержка и логи",
   "menu.folder": "Открыть папку игры",
 
-  "menu.title": "Настройки",
   "menu.language": "Язык",
   "menu.community": "Сообщество",
 

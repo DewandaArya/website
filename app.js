@@ -5,7 +5,6 @@
   var sidebar = document.getElementById("sidebar");
   if (!toggle || !sidebar) return;
 
-  var back = sidebar.querySelector(".sidebar__back");
   var icon = toggle.querySelector(".topbar__toggle-icon");
 
   var ICON_SETTINGS = "assets/icons/sliders.svg";
@@ -13,7 +12,6 @@
 
   function setOpen(open) {
     sidebar.classList.toggle("is-open", open);
-    document.body.classList.toggle("is-settings-open", open);
     toggle.setAttribute("aria-expanded", String(open));
     toggle.setAttribute("aria-label", open ? "Home" : "Settings");
     if (icon) icon.src = open ? ICON_HOME : ICON_SETTINGS;
@@ -22,10 +20,6 @@
   toggle.addEventListener("click", function () {
     setOpen(!sidebar.classList.contains("is-open"));
   });
-
-  if (back) {
-    back.addEventListener("click", function () { setOpen(false); });
-  }
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") setOpen(false);

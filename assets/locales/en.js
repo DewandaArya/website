@@ -46,7 +46,6 @@ window.MojoI18N.en = {
   "menu.logs": "Support & log files",
   "menu.folder": "Open game directory",
 
-  "menu.title": "Settings",
   "menu.language": "Language",
   "menu.community": "Community",
 
