@@ -19,7 +19,25 @@
     defaults[el.getAttribute("data-i18n")] = el.textContent;
   });
 
+  var srcDefaults = {};
+  document.querySelectorAll("[data-i18n-src]").forEach(function (el) {
+    srcDefaults[el.getAttribute("data-i18n-src")] = el.getAttribute("src");
+  });
+
+  var altDefaults = {};
+  document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+    altDefaults[el.getAttribute("data-i18n-alt")] = el.getAttribute("alt");
+  });
+
   var loading = {};
+  var currentLang = supported[0];
+
+  function t(key, fallback) {
+    var dict = translations[currentLang] || {};
+    if (dict[key] != null) return dict[key];
+    if (defaults[key] != null) return defaults[key];
+    return fallback != null ? fallback : key;
+  }
 
   function loadLocale(lang) {
     if (translations[lang]) return Promise.resolve(translations[lang]);
@@ -51,13 +69,25 @@
 
   function apply(lang) {
     var dict = translations[lang] || {};
+    currentLang = lang;
     document.documentElement.lang = lang;
     document.querySelectorAll("[data-i18n]").forEach(function (el) {
       var key = el.getAttribute("data-i18n");
       var value = dict[key] != null ? dict[key] : defaults[key];
       if (value != null) el.textContent = value;
     });
+    document.querySelectorAll("[data-i18n-src]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-src");
+      var value = dict[key] != null ? dict[key] : srcDefaults[key];
+      if (value != null) el.setAttribute("src", value);
+    });
+    document.querySelectorAll("[data-i18n-alt]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n-alt");
+      var value = dict[key] != null ? dict[key] : altDefaults[key];
+      if (value != null) el.setAttribute("alt", value);
+    });
     selects.forEach(function (sel) { sel.value = lang; });
+    document.dispatchEvent(new CustomEvent("mojo:langchange", { detail: { lang: lang } }));
   }
 
   function setLang(lang) {
@@ -65,6 +95,9 @@
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
     loadLocale(lang).then(function () { apply(lang); });
   }
+
+  translations.t = t;
+  translations.getLang = function () { return currentLang; };
 
   selects.forEach(function (sel) {
     sel.addEventListener("change", function () { setLang(sel.value); });

@@ -154,30 +154,44 @@
 
   <section class="block" id="news">
     <div class="section-head">
-      <h2 data-i18n="news.title">Latest news</h2>
-      <p data-i18n="news.subtitle">Three placeholder entries — swap them out for the real changelog posts.</p>
+      <h2 data-i18n="news.title">Latest releases</h2>
+      <p data-i18n="news.subtitle">The newest builds published on GitHub.</p>
     </div>
 
-    <div class="news">
-      <a class="news__item" href="#">
-        <span class="news__date">08.10.2026</span>
-        <span class="news__title" data-i18n="news.item1.title">Placeholder release announcement headline</span>
-        <span class="news__excerpt" data-i18n="news.item1.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
-      </a>
-      <a class="news__item" href="#">
-        <span class="news__date">27.09.2026</span>
-        <span class="news__title" data-i18n="news.item2.title">Placeholder performance update headline</span>
-        <span class="news__excerpt" data-i18n="news.item2.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
-      </a>
-      <a class="news__item" href="#">
-        <span class="news__date">12.09.2026</span>
-        <span class="news__title" data-i18n="news.item3.title">Placeholder community spotlight headline</span>
-        <span class="news__excerpt" data-i18n="news.item3.excerpt">Temporary test text standing in for the first paragraph of the post.</span>
-      </a>
+    <div class="news" id="releases" data-releases="MojoLauncher/MojoLauncher" data-limit="3"
+         aria-live="polite" aria-busy="true">
+      <p class="news__status" data-i18n="news.loading">Loading releases…</p>
     </div>
+
+    <a class="news__more" href="https://github.com/MojoLauncher/MojoLauncher/releases"
+       target="_blank" rel="noopener noreferrer" data-i18n="news.viewAll">View all releases on GitHub</a>
   </section>
 
   <section class="block" id="download">
+    <div class="section-head">
+      <h2 data-i18n="download.title">Download MojoLauncher</h2>
+      <p data-i18n="download.subtitle">Get the launcher for Android. Stable builds come from Google Play; the newest builds are published on GitHub.</p>
+    </div>
+
+    <div class="downloads">
+      <a class="downloads__play"
+         href="https://play.google.com/store/apps/details?id=git.artdeell.mjlaunch"
+         target="_blank" rel="noopener noreferrer">
+        <img class="downloads__badge" src="assets/badges/google-play-en.png"
+             alt="Get it on Google Play" width="646" height="250"
+             data-i18n-src="play.src" data-i18n-alt="play.alt">
+      </a>
+
+      <div class="downloads__nightly">
+        <a class="btn btn--outline btn--wide"
+           href="https://github.com/MojoLauncher/MojoLauncher/releases/tag/nightly"
+           target="_blank" rel="noopener noreferrer" data-i18n="download.nightly">Nightly build</a>
+        <p class="downloads__warning" data-i18n="download.nightlyWarning">Nightly builds are experimental and can be unstable or broken &mdash; use them at your own risk.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="resources">
     <div class="section-head">
       <h2 data-i18n="start.title">Get started</h2>
       <p data-i18n="start.subtitle">Pick a destination below. Every button is placeholder navigation for now.</p>
@@ -242,5 +256,6 @@
 
 <script src="i18n.js"></script>
 <script src="app.js"></script>
+<script src="releases.js"></script>
 </body>
 </html>
