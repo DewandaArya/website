@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Roboto";
-  src: url("assets/Roboto-Variable.woff") format("woff"),
-       url("assets/Roboto-Variable.ttf") format("truetype");
+  src: url("assets/Roboto-Variable.woff2") format("woff2"),
+      url("assets/Roboto-Variable.woff") format("woff");
   font-weight: 100 900;
   font-stretch: 75% 100%;
   font-style: normal;
@@ -10,7 +10,8 @@
 
 @font-face {
   font-family: "Noto Sans Bold";
-  src: url("assets/noto_sans_bold.ttf") format("truetype");
+  src: url("assets/noto_sans_bold.woff2") format("woff2"),
+        url("assets/noto_sans_bold.woff") format("woff");
   font-display: swap;
 }
 
